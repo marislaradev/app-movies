@@ -1,7 +1,7 @@
 import videos from "../../json/videos.json";
 import styles from "./Category.module.css";
 
-export const categories = ["Muamba de Rima", "Dois lados da moeda"];
+export const categories = ["Muamba de Rima", "Dois lados da moeda", "Mixtape ZZZ Beats", "Singles", "EP Philo"];
 
 export function filterCategory(id) {
   return videos.filter((video) => video.category === categories[id]);
