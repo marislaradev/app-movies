@@ -1,6 +1,7 @@
 import styles from "./SearchVideoList.module.css";
 import VideoList from "../../components/VideoList";
-import { useState } from "react";
+import { useEffect, useState } from "react";
+import Loader from "../Loader";
 
 // Função para remover acentos
 function removeAccents(str) {
@@ -12,14 +13,21 @@ function filterVideos(videos, searchText) {
   const searchTextNormalized = removeAccents(searchText.toLowerCase());
   return videos.filter(
     (video) =>
-      removeAccents(video.category.toLowerCase()).includes(searchTextNormalized) ||
+      removeAccents(video.category.toLowerCase()).includes(
+        searchTextNormalized
+      ) ||
       removeAccents(video.title.toLowerCase()).includes(searchTextNormalized)
   );
 }
 
 function SearchVideoList({ videos }) {
-  const [searchText, setSearchText] = useState('');
+  const [searchText, setSearchText] = useState("");
   const foundVideos = filterVideos(videos, searchText);
+
+  const [loading, setLoading] = useState(true);
+  useEffect(() => {
+    setTimeout(() => setLoading(false), 1000);
+  }, []);
 
   return (
     <section className={styles.container}>
@@ -27,14 +35,18 @@ function SearchVideoList({ videos }) {
         type="search"
         placeholder="Pesquisar vídeos..."
         value={searchText}
-        onChange={event => setSearchText(event.target.value)}
+        onChange={(event) => setSearchText(event.target.value)}
       />
-      <VideoList 
-        videos={foundVideos}
-        emptyHeading={`Sem vídeos sobre '${searchText}'`} />
+      {loading ? (
+        <Loader />
+      ) : (
+        <VideoList
+          videos={foundVideos}
+          emptyHeading={`Sem vídeos sobre '${searchText}'`}
+        />
+      )}
     </section>
   );
 }
 
 export default SearchVideoList;
-
