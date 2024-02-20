@@ -9,3 +9,10 @@
     padding-top: 100px;
     padding-bottom: 40px;
 }
+
+@media (max-width: 1024px) {
+    iframe {
+        width: 100%;
+        aspect-ratio: 16/9;
+    }
+}

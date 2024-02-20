@@ -23,3 +23,22 @@
     justify-content: center;
     width: 10rem;
 }
+
+@media (max-width: 480px) {
+    .logo {
+        width: 7rem;
+    }
+    .header a {
+        font-size: 0.95rem;
+        padding-inline: 0.5rem;
+    }
+}
+
+@media (max-width: 380px) {
+    .logo {
+        width: 7rem;
+    }
+    .header a {
+        font-size: 0.75rem;
+    }
+}
