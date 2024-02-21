@@ -1,70 +1,70 @@
-# Getting Started with Create React App
+<img align="center" alt="Pokedex logo" height="150" width="300" src="https://github.com/marislaradev/rapflix/assets/121054908/4be69506-f9ee-4531-ad9f-85aedc5965ae">
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+RapFlix é um projeto inspirado em serviços de streaming de vídeo, feito pelo professor Edson Maia, no seu canal do Youtube. O projeto original é chamado MaiaFlix.
+Recomendo fortemente que acessem o canal. A didática do professor é incrível e me tirou muitas dúvidas em React. 🔗https://www.youtube.com/c/professoredsonmaia
 
-## Available Scripts
+## Propósito
 
-In the project directory, you can run:
+Este projeto foi desenvolvido e personalizado com o objetivo de proporcionar uma plataforma de streaming dedicada aos fãs do grupo paranaense de Rap Haisstan.
 
-### `npm start`
+## Funcionalidades
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+1. **Catálogo de Vídeos:** O projeto oferece um catálogo de vídeos do Haisstan, organizados por categoria. Os usuários podem navegar por diferentes categorias, separadas por álbuns do grupo.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+2. **Registro de Vídeo:** Assim que um novo vídeo for lançado, os integrantes do grupo poderão utilizar a Url do vídeo do Youtube para fazer o upload na RapFlix. Essa funcionalidade ainda está em desenvolvimento. Falta implementar a autenticação na rota de registro de vídeos para que possa ser possível somente o usuário autenticado acessá-la.
 
-### `npm test`
+3. **Pesquisa Avançada:** Existe uma funcionalidade de pesquisa que permite aos usuários encontrar vídeos específicos por título ou categoria.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+4. **Reprodução de Vídeo:** Os usuários podem assistir a vídeos individualmente na página de visualização, onde os vídeos são incorporados do YouTube.
 
-### `npm run build`
+5. **Página de Favoritos:** Há uma página dedicada aos vídeos marcados como favoritos pelos usuários, permitindo que eles acessem facilmente seus vídeos favoritos. Essa funcionalidade também está em desenvolvimento, onde será possível persistir os dados dos vídeos favoritos de uma outra maneira. 
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Ferramentas Utilizadas
+ 
+1. **Linguagem de Programação JavaScript:**
+   - JavaScript é a linguagem de programação principal utilizada no projeto. É amplamente utilizada no desenvolvimento web e oferece suporte robusto para criar interfaces interativas e dinâmicas.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+2. **Framework React.js:**
+   - React.js é o framework JavaScript utilizado para construir a interface de usuário do projeto. Ele oferece um modelo de desenvolvimento declarativo, componentizado e eficiente, facilitando a criação de interfaces reativas e escaláveis.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+3. **CSS Modules:**
+   - CSS Modules são utilizados para modularizar e encapsular estilos CSS. Isso ajuda a evitar conflitos de nomenclatura e facilita a manutenção do código CSS.
 
-### `npm run eject`
+4. **React Router:**
+   - O React Router é utilizado para gerenciar a navegação entre as diferentes páginas da aplicação. Ele permite que o usuário navegue de forma fluida entre a página inicial e outras páginas, como a de registro de vídeo, pesquisa e visualização de vídeo.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+5. **Context API do React:**
+   - A Context API do React é utilizada para gerenciar o tema da aplicação de forma global. Isso permite que o tema seja facilmente acessível em qualquer parte da aplicação, garantindo consistência na aparência e facilitando futuras atualizações ou personalizações de tema.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Como Rodar o Projeto
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### Pré-requisitos
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Certifique-se de ter as seguintes ferramentas instaladas em sua máquina:
 
-## Learn More
+- Node.js (v14 ou superior)
+- npm (gerenciador de pacotes do Node.js)
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### Passos
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+1- **Clone o repositório:**
 
-### Code Splitting
+   ```bash
+   git clone https://https://github.com/marislaradev/rapflix
+  ```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+ 2- **Instale as dependências:**
 
-### Analyzing the Bundle Size
+Navegue até o diretório do projeto e execute o seguinte comando para instalar as dependências:
+   ```bash
+   cd rapflix
+   npm install
+  ```
+3- **Rodando o Projeto:**
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+Depois de instalar as dependências, você pode iniciar o servidor de desenvolvimento com o seguinte comando:
+ ```bash
+   npm start
+  ```
+Isso iniciará o projeto localmente. Abra o link que vai aparecer no seu terminal para ver a aplicação em execução.
 
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
