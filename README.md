@@ -33,9 +33,6 @@ Este projeto foi desenvolvido e personalizado com o objetivo de proporcionar uma
 4. **React Router:**
    - O React Router é utilizado para gerenciar a navegação entre as diferentes páginas da aplicação. Ele permite que o usuário navegue de forma fluida entre a página inicial e outras páginas, como a de registro de vídeo, pesquisa e visualização de vídeo.
 
-5. **Context API do React:**
-   - A Context API do React é utilizada para gerenciar o tema da aplicação de forma global. Isso permite que o tema seja facilmente acessível em qualquer parte da aplicação, garantindo consistência na aparência e facilitando futuras atualizações ou personalizações de tema.
-
 ## Como Rodar o Projeto
 
 ### Pré-requisitos
